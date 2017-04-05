@@ -1,0 +1,296 @@
+/* ----------------------------------------------------------------------------
+	Fonts
+---------------------------------------------------------------------------- */
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Fl4y0QdOxyyTHEGMXX8kcYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+body,small,#primary-menu ul li a,#primary-menu ul ul a,.button.button-desc span {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,#logo,.button.button-desc {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font-body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.font-primary {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+/* ----------------------------------------------------------------------------
+	Header
+---------------------------------------------------------------------------- */
+
+#header {
+  border-bottom: 0;
+}
+
+#header #header-wrap {
+  position: fixed;
+  z-index: 199;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  -webkit-transition: height .4s ease, background-color .4s ease, opacity .3s ease;
+  -o-transition: height .4s ease, background-color .4s ease, opacity .3s ease;
+  transition: height .4s ease, background-color .4s ease, opacity .3s ease;
+
+  background-color: #FFF;
+}
+
+#header.full-header:not(.border-full-header):not(.sticky-header) #header-wrap {
+  border-bottom: 0;
+}
+
+#header.full-header.border-full-header #header-wrap {
+  border-bottom-color: rgba(0,0,0,0.05) !important;
+}
+
+.dark #header.full-header.border-full-header #header-wrap,#header.dark.full-header.border-full-header #header-wrap {
+  border-bottom-color: rgba(255,255,255,0.15) !important;
+}
+
+#header.full-header #logo {
+  border-right: 0;
+}
+
+#header.full-header #primary-menu > ul {
+  margin-right: 0;
+  padding-right: 0;
+
+  border-right: 0;
+}
+
+.show {
+    display: block!important;
+}
+
+#header,#header-wrap,#logo img {
+  height: 70px;
+
+  -webkit-transition: height .4s ease, opacity .3s ease;
+  -o-transition: height .4s ease, opacity .3s ease;
+  transition: height .4s ease, opacity .3s ease;
+}
+
+/* Sticky Header
+---------------------------------------------------------------------------- */
+
+#header.sticky-header #header-wrap,#header.full-header.border-full-header.sticky-header #header-wrap {
+  border-bottom: 1px solid #F5F5F5 !important;
+  box-shadow: none;
+
+  -webkit-backface-visibility: hidden;
+}
+
+/* Side Header
+---------------------------------------------------------------------------- */
+
+@media (min-width: 992px) {
+  .side-header #header #header-wrap {
+    position: relative;
+  }
+
+  .side-header #header,  .side-header #header-wrap {
+    height: 100%;
+  }
+
+  .side-header #header-wrap {
+    width: 300px !important;
+  }
+
+  .side-header #logo,  .side-header #logo img,  .side-header #primary-menu:not(.style-2),  .side-header #primary-menu:not(.style-2) > ul {
+    height: auto;
+  }
+}
+
+/* Primary Menu
+---------------------------------------------------------------------------- */
+
+#primary-menu ul li a {
+  padding: 24px 22px;
+
+  letter-spacing: 3px;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* ----------------------------------------------------------------------------
+	Page Section
+---------------------------------------------------------------------------- */
+
+.page-section {
+  padding: 120px 0;
+}
+
+/* ----------------------------------------------------------------------------
+	Portfolio Overlay
+---------------------------------------------------------------------------- */
+
+.portfolio-overlay {
+  background-color: rgba(255,255,255,0.9);
+}
+
+.portfolio-overlay .portfolio-desc h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.portfolio-overlay .portfolio-desc h3 a {
+  color: #333 !important;
+  text-shadow: none;
+}
+
+.portfolio-overlay .portfolio-desc span {
+  margin-top: 12px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.portfolio-overlay .portfolio-desc span a {
+  color: #999 !important;
+  text-shadow: none;
+}
+
+/* ----------------------------------------------------------------------------
+	Buttons
+---------------------------------------------------------------------------- */
+
+.button.button-border {
+  letter-spacing: 2px;
+
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.button.button-border.button-light {
+  color: #F9F9F9;
+  border-color: #F9F9F9;
+}
+
+.button.button-border.button-light:hover {
+  color: #333;
+  background-color: #F9F9F9;
+  text-shadow: none;
+}
+
+.button.button-circle {
+  border-radius: 20px;
+}
+
+/* More Links
+---------------------------------------------------------------------------- */
+
+.link-border {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+
+  border-bottom: 3px solid #2d398d;
+
+  font-weight: 600;
+}
+
+.link-border:hover {
+  border-color: #FFF;
+}
+
+/* ----------------------------------------------------------------------------
+	Services Grid
+---------------------------------------------------------------------------- */
+
+.grid-border {
+  overflow: hidden;
+}
+
+.grid-border [class^=col-]:before,.grid-border [class^=col-]:after {
+  position: absolute;
+
+  content: '';
+}
+
+.grid-border [class^=col-]:before {
+  top: 0;
+  left: -1px;
+
+  height: 100%;
+
+  border-left: 1px solid rgba(0,0,0,0.05);
+}
+
+.grid-border [class^=col-]:after {
+  top: auto;
+  bottom: -1px;
+  left: 0;
+
+  width: 100%;
+  height: 0;
+
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.dark .grid-border [class^=col-]:before,.dark .grid-border [class^=col-]:after {
+  border-color: rgba(255,255,255,0.05);
+}
+
+/* ----------------------------------------------------------------------------
+	Dark
+---------------------------------------------------------------------------- */
+
+.dark #header.sticky-header #header-wrap,#header.sticky-header.dark #header-wrap {
+  border-bottom-color: rgba(255,255,255,0.1) !important;
+}
+#bg {
+  background: url(../img/bg.jpg) top center no-repeat;
+  background-size: cover;
+}
+
+/* ----------------------------------------------------------------------------
+	Responsive
+---------------------------------------------------------------------------- */
+
+@media (max-width: 991px) {
+  #logo {
+    height: 70px !important;
+  }
+
+  #header {
+    min-height: 70px;
+  }
+
+  #primary-menu-trigger {
+    top: 10px !important;
+  }
+
+  .dark.overlay-menu #primary-menu:not(.not-dark) ul,  .overlay-menu #primary-menu.dark ul {
+    background-color: transparent;
+  }
+}
