@@ -283,7 +283,7 @@ ul.list-welcome li {
 /*---------- service section ------------*/
 
 .service-section {
-  background: url(../images/servicebg.jpg) no-repeat #252525;
+  background: #252525;
 }
 
 .service-col {}
