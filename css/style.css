@@ -61,6 +61,11 @@ body {
   text-align: right;
 }
 
+.phone-text .numbers {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .custom-header .navbar-default {
   background-color: #fff;
   border-color: #fff;
